@@ -1,6 +1,6 @@
 resource "aws_subnet" "private_subnet_1a" {
     vpc_id = aws_vpc.cluster_vpc.id
-    cidr_block = var.private_subnet_1a_cidr_block
+    cidr_block = "10.0.32.0/20"
 
     availability_zone = format("%sa", var.aws_region)
 
@@ -12,7 +12,7 @@ resource "aws_subnet" "private_subnet_1a" {
 
 resource "aws_subnet" "private_subnet_1c" {
     vpc_id = aws_vpc.cluster_vpc.id
-    cidr_block = var.private_subnet_1c_cidr_block
+    cidr_block = "10.0.48.0/20"
 
     availability_zone = format("%sc", var.aws_region)
 
