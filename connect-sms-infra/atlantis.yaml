@@ -1,0 +1,37 @@
+version: 3
+projects:
+- dir: .
+  workspace: qa
+  autoplan:
+    when_modified: ["*"]
+    enabled: false
+- dir: .
+  workspace: sandbox-prod
+  autoplan:
+    when_modified: ["*"]
+    enabled: false
+- dir: .
+  workspace: prod
+  autoplan:
+    when_modified: ["*"]
+    enabled: false
+- dir: .
+  workspace: api-dev
+  autoplan:
+    when_modified: ["*"]
+    enabled: false
+- dir: .
+  workspace: api-qa
+  autoplan:
+    when_modified: ["*"]
+    enabled: false
+- dir: .
+  workspace: api-prod
+  autoplan:
+    when_modified: ["*"]
+    enabled: false
+- dir: .
+  workspace: api-sandbox-prod
+  autoplan:
+    when_modified: ["*"]
+    enabled: false
