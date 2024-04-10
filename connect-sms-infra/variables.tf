@@ -61,10 +61,6 @@ variable "business_description" {
 
 variable "is_pci" {
   default = {
-              dev          = false
-              qa           = false
-              sandbox-qa   = false
-              prod         = false
               sandbox-prod = false
               api-qa       = false
               api-dev      = false
@@ -350,11 +346,6 @@ variable "deletion_protection" {
 
 variable "instance_class" {
   default = {
-    dev          = "db.t3.small"
-    qa           = "db.t3.small"
-    sandbox-qa   = "db.t3.small"
-    prod         = "db.t3.medium"
-    sandbox-prod = "db.t3.medium"
     api-qa       = "db.t3.small"
     api-dev      = "db.t3.small"
     api-sandbox-prod = "db.t3.medium"
